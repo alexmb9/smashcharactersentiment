@@ -21,9 +21,7 @@ api = tweepy.API(auth)
 # Maximum number of tweets to be extracted
 
 maximum_number_of_tweets_to_be_extracted = 300
-
 charactername=input('Enter a name of a smash character:')
-
 smashcharacter=(charactername+' smash')
 
 #writes every tweet onto a text file with the query and encodes it in utf-8
@@ -41,10 +39,8 @@ open
 
 def countsentiment():
 
-
-
     #decoding textfile
-
+    
     with open("smashcharactersentiment.txt", "rb") as f:
         text = f.read().rstrip()  # rstrip to remove trailing spaces
         decoded = text.decode('unicode-escape').encode('latin1').decode('utf-8')
